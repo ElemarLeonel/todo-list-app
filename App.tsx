@@ -1,5 +1,6 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View, Image, TextInput } from "react-native";
+import { Pessoa } from "./src/components/Pessoa";
 
 export default function App() {
   interface Usuario {
@@ -71,6 +72,7 @@ export default function App() {
         height={100}
       />
       <TextInput placeholder="Digite algo..."></TextInput>
+      <Pessoa nome="Vinicius" idade={20} ativa />
     </View>
   );
 }
